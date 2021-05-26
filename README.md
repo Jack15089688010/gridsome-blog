@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2021-05-23 15:19:30
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2021-05-23 15:55:02
+-->
 # Default starter for Gridsome
 
 This is the project you get when you run `gridsome create new-project`.
@@ -12,3 +20,4 @@ This is the project you get when you run `gridsome create new-project`.
 2. `cd my-gridsome-site` to open the folder
 3. `gridsome develop` to start a local dev server at `http://localhost:8080`
 4. Happy coding 🎉🙌
+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

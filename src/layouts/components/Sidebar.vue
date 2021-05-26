@@ -1,3 +1,11 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2021-05-23 15:19:30
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2021-05-23 23:21:26
+-->
 <template>
   <div>
     <el-card shadow="never">
@@ -70,12 +78,12 @@ export default {
     ...mapGetters(["token", "githubUsername", "mini"]),
   },
   mounted() {
-    this.active = this.$route.path || '/'
+    this.active = this.$route.path || "/";
   },
   methods: {
     onSelect(index) {
-      if(index !== this.$route.path){
-        this.$router.push(index || '/');
+      if (index !== this.$route.path) {
+        this.$router.push(index || "/");
       }
     },
     openTokenDialog() {

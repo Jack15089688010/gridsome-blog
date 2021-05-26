@@ -11,6 +11,7 @@
     "element-ui": "^2.14.1",
     "gridsome": "^0.7.0",
     "gridsome-source-github-api": "^0.2.0",
+    "js-base64": "^2.4.3",
     "js-cookie": "^2.2.1",
     "mavon-editor": "^2.9.1",
     "vuex": "^3.6.0"

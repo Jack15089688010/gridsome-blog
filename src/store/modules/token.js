@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2021-05-23 15:19:30
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2021-05-26 19:04:20
+ */
 import Cookie from '@/utils/cookie'
 import UserApi from '@/api/user'
 import store from '../index'
@@ -21,31 +29,33 @@ const token = {
     },
 
     actions: {
-        Authentication({ commit }, accessToken) {
-            UserApi.verifyToken(accessToken).then((response) => {
-                let result = response.data
-                let githubUsername = store.state.configuration.githubUsername
-                if (githubUsername == result['login']) {
-                    commit('SET_TOKEN', accessToken)
-                    Vue.prototype.$notify({
-                        title: '成功',
-                        message: 'Token绑定成功',
-                        type: 'success'
-                    })
-                    // Vue.prototype.$message({
-                    //     message: 'Token绑定成功',
-                    //     type: 'success'
-                    // })
-                } else {
-                    Vue.prototype.$message({
-                        message: 'Token用户不一致',
-                        type: 'error'
-                    })
-                }
-            }).catch(() => {
+        // Authentication({ commit }, accessToken) {
+        //     UserApi.verifyToken(accessToken).then((response) => {
+        //         let result = response.data
+        //         console.log(result);
+        //         console.log(store);
+        //         let githubUsername = store.modules.configuration.state.githubUsername
+        //         if (githubUsername == result['login']) {
+        //             commit('SET_TOKEN', accessToken)
+        //             Vue.prototype.$notify({
+        //                 title: '成功',
+        //                 message: 'Token绑定成功',
+        //                 type: 'success'
+        //             })
+        //             // Vue.prototype.$message({
+        //             //     message: 'Token绑定成功',
+        //             //     type: 'success'
+        //             // })
+        //         } else {
+        //             Vue.prototype.$message({
+        //                 message: 'Token用户不一致',
+        //                 type: 'error'
+        //             })
+        //         }
+        //     }).catch(() => {
 
-            })
-        },
+        //     })
+        // },
         Cancellation({ commit }) {
             commit('REMOVE_TOKEN')
             Vue.prototype.$message({

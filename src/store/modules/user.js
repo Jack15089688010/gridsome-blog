@@ -1,11 +1,19 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2021-05-23 15:19:30
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2021-05-26 22:58:24
+ */
 import UserApi from '../../api/user'
 
 
 const user = {
     state: {
-        avatarUrl: null,
+        avatarUrl: 'https://avatars.githubusercontent.com/u/41071350?v=4',
         name: null,
-        location: null,
+        location: 'https://github.com/Jack15089688010',
         blog: null,
         followers: 0,
         following: 0

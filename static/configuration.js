@@ -1,8 +1,16 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2021-05-23 15:19:30
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2021-05-26 19:12:26
+ */
 export default {
-  "githubUsername": "GitHub-Laziji",
-  "blogTitle": "Laziji",
-  "blogDescribe": "欢迎来到辣子鸡的个人博客。",
-  "htmlTitle": "辣子鸡的博客",
+  "githubUsername": "Jack15089688010",
+  "blogTitle": "jack-博客",
+  "blogDescribe": "欢迎来到jack的个人博客。",
+  "htmlTitle": "Jack的博客",
   "fontColor": "#ffffff",
   "useBackgroundImage": false,
   "backgroundColorLeft": "#2690F9",

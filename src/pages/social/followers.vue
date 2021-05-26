@@ -1,11 +1,19 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2021-05-24 11:53:35
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2021-05-24 15:29:28
+-->
 <template>
   <div>
-    <div v-if="followingList.length">
+    <div v-if="followersList.length">
       <el-row style="min-height: 200px">
         <el-col
           :span="8"
-          v-for="(item, index) in followingList"
-          :key="'following' + index"
+          v-for="(item, index) in followersList"
+          :key="'followers' + index"
           style="padding: 10px"
         >
           <el-card
@@ -28,14 +36,14 @@
             >
             <br />
             <img
-              :src="item.avatarUrl"
+              :src="item.node.avatarUrl"
               style="width: 100%; border-radius: 5px; margin-top: 5px"
             />
           </el-card>
         </el-col>
       </el-row>
       <div style="text-align: center; margin-top: 10px">
-        <Pager :info="$page.allFollowings.pageInfo" />
+        <Pager :info="$page.allFollowers.pageInfo" />
       </div>
     </div>
     <div
@@ -48,16 +56,17 @@
       v-else
     >
       <font style="font-size: 30px; color: #dddddd">
-        <b>(￢_￢) 还没有关注一个人</b>
+        <b>(￢_￢) 没有一个粉丝</b>
       </font>
     </div>
   </div>
 </template>
- 
+
 <script>
 import { Pager } from "gridsome";
 
 export default {
+  name: 'followers',
   components: {
     Pager,
   },
@@ -67,11 +76,8 @@ export default {
     };
   },
   computed: {
-    user() {
-      return this.$page.allUser.edges[0].node;
-    },
-    followingList() {
-      return this.$page.allFollowings.edges;
+    followersList() {
+      return this.$page.allFollowers.edges;
     },
   },
   methods: {

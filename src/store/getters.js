@@ -1,23 +1,31 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2021-05-23 15:19:30
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2021-05-26 19:21:03
+ */
 const getters = {
     token: state => state.token.token,
-    githubUsername: state => state.configuration.githubUsername,
-    blogTitle: state => state.configuration.blogTitle,
-    blogDescribe: state => state.configuration.blogDescribe,
-    htmlTitle: state => state.configuration.htmlTitle,
-    fontColor: state => state.configuration.fontColor,
-    useBackgroundImage: state => state.configuration.useBackgroundImage,
-    backgroundColorLeft: state => state.configuration.backgroundColorLeft,
-    backgroundColorRight: state => state.configuration.backgroundColorRight,
-    audioUrl: state => state.configuration.audioUrl,
-    mini: state => state.configuration.mini,
-    audioAutoPlay: state => state.configuration.audioAutoPlay,
-    webSites: state => state.configuration.webSites,
-    avatarUrl: state => state.user.avatarUrl,
-    name: state => state.user.name,
-    location: state => state.user.location,
-    blog: state => state.user.blog,
-    followersTotal: state => state.user.followers,
-    followingTotal: state => state.user.following,
+    githubUsername: state => state.githubUsername,
+    blogTitle: state => state.blogTitle,
+    blogDescribe: state => state.blogDescribe,
+    htmlTitle: state => state.htmlTitle,
+    fontColor: state => state.fontColor,
+    useBackgroundImage: state => state.useBackgroundImage,
+    backgroundColorLeft: state => state.backgroundColorLeft,
+    backgroundColorRight: state => state.backgroundColorRight,
+    audioUrl: state => state.audioUrl,
+    mini: state => state.mini,
+    audioAutoPlay: state => state.audioAutoPlay,
+    webSites: state => state.webSites,
+    avatarUrl: state => state.avatarUrl,
+    name: state => state.name,
+    location: state => state.location,
+    blog: state => state.blog,
+    followersTotal: state => state.followers,
+    followingTotal: state => state.following,
 
 
 }
