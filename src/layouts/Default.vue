@@ -49,7 +49,7 @@
         >GitHub主页</a
       >
       <a
-        href="https://github.com/GitHub-Laziji/vblog"
+        href="https://github.com/Jack15089688010/gridsome-blog"
         class="btn"
         target="_blank"
         v-if="!mini"
