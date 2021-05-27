@@ -4,7 +4,7 @@
  * @Author: sueRimn
  * @Date: 2021-05-25 00:32:41
  * @LastEditors: sueRimn
- * @LastEditTime: 2021-05-25 19:11:45
+ * @LastEditTime: 2021-05-27 01:04:09
 -->
 <template>
   <Layout>
@@ -99,8 +99,8 @@ export default {
   computed: {
     ...mapGetters(["token"]),
     blog(){
-        this.$page.blog.content = this.$markdown(this.$page.blog.content)
-        console.log(this.$page.blog.content);
+        // this.$page.blog.content = this.$markdown(this.$page.blog.content)
+        // console.log(this.$page.blog.content);
         return this.$page.blog
     }
   },
@@ -132,7 +132,7 @@ export default {
         });
         return;
       }
-      this.$router.push("/user/blog/edit/" + this.blog.id);
+      this.$router.push("/blog/edit/" + this.blog.id);
     },
     more() {
       this.$router.push("/blog");

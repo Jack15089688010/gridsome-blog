@@ -9,12 +9,12 @@
                     <el-input v-model="form.description" type="textarea"></el-input>
                 </el-form-item>
                 <el-form-item label="博客正文" prop="content">
-                    <mavon-editor @imgAdd="imgAdd" style="max-height: 500px" ref="md" v-model="form.content" :subfield="false" :toolbars="mavonEditorToolbars"
-                    />
+                    <!-- <mavon-editor @imgAdd="imgAdd" style="max-height: 500px" ref="md" v-model="form.content" :subfield="false" :toolbars="mavonEditorToolbars"
+                    /> -->
                 </el-form-item>
                 <el-form-item>
                     <el-button type="primary" @click="onSubmit" :loading="submitButton.loading" :disabled="submitButton.disabled">修改</el-button>
-                    <el-button @click="$router.push('/blog/main')">返回</el-button>
+                    <el-button @click="$router.push('/blog')">返回</el-button>
                 </el-form-item>
             </el-form>
         </el-card>

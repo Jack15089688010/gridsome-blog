@@ -4,7 +4,7 @@
  * @Author: sueRimn
  * @Date: 2021-05-23 15:19:30
  * @LastEditors: sueRimn
- * @LastEditTime: 2021-05-26 09:31:07
+ * @LastEditTime: 2021-05-27 00:54:29
  */
 // This is the main.js file. Import global CSS and scripts here.
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
@@ -12,6 +12,8 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import Vuex from 'vuex'
 import mavonEditor from 'mavon-editor'
+import 'mavon-editor/dist/css/index.css'
+import 'mavon-editor/dist/markdown/github-markdown.min.css'
 import store from './store'
 import util from './utils/util'
 
